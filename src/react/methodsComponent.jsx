@@ -6,7 +6,8 @@ export default class extends React.Component{
     super(props);
     alert("In Constructor");
     this.state = {
-      count: 0
+      count: 0,
+      enableState: false
     }
   }
   
@@ -17,6 +18,12 @@ export default class extends React.Component{
   increment() {
     this.setState({
       count: this.state.count+1
+    })
+  }
+
+  enableState() {
+    this.setState({
+      enableState: true
     })
   }
 
@@ -51,7 +58,8 @@ export default class extends React.Component{
           <div className="section-label">
             <h5>Count: <span>{this.state.count}</span></h5>
           </div>
-          <button onClick={this.increment.bind(this)}>+</button>
+          <button onClick={this.increment.bind(this)}>+</button> &nbsp;
+          <button onClick={this.enableState.bind(this)}>Enable Component Update</button>
         </div>
       </div>
     )
@@ -67,7 +75,7 @@ export default class extends React.Component{
 
   shouldComponentUpdate() {
     alert("In should update");
-    return false;
+    return this.state.enableState;
   }
 
   componentWillUpdate() {

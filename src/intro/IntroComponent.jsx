@@ -11,14 +11,12 @@ export default class extends React.Component{
   render() {
     return(
       <div className="col-xs-12 content-wrapper">
-        <div className="col-xs-12">
-          <ul className="topics">
-            <li>Javascript seemed to be easier after using it in React</li>
-            <li>Components</li>
-            <li>Flexibility at design</li>
-            <li>Virtual DOM</li>
-          </ul>
-        </div>
+        <ul className="topics">
+          <li>Javascript seemed to be easier after using it in React</li>
+          <li>Component design</li>
+          <li>Flexibile design patterns</li>
+          <li>Virtual DOM</li>
+        </ul>
       </div>
     )
   }

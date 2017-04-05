@@ -1,4 +1,4 @@
-React-Starter-Kit will be a useful way of learning react to a starter. 
+React-Starter-Kit will be a useful for a starter to learn React JS. 
 References for React and some basic examples are available in this Repo
 
 # Development Setup

@@ -1,0 +1,44 @@
+.jsx-section {
+  padding: 20px 15px;
+  .jsx-info {
+    color: #286090;
+  }
+}
+
+.react-section {
+  .section-label {
+    margin: 0 0 20px 0;
+  }
+}
+.life-cycle-section {
+  padding-top: 20px;
+  .section-label {
+    margin: 0 0 20px 0;
+  }
+}
+.react-font-icon {
+	height: 14px;
+	width: 14px;
+}
+.documentation-info {
+	padding-left: 40px;
+  a {
+    cursor: pointer;
+  }
+}
+
+.course-wrapper {
+  border: 1px solid #ccc;
+  padding: 15px;
+  label {
+    width: 100px;
+  }
+}
+.event-section {
+  label {
+    width: 100px;
+  }
+  input {
+    margin-right: 15px;
+  }
+}

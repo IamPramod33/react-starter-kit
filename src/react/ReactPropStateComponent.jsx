@@ -35,10 +35,12 @@ export default class extends React.Component{
   /* Render Method */
   render() {
     return(
-      <div className="col-xs-12">
-        <div className="col-xs-6"><Course data={this.state.courseObj}/></div>
-        <span></span>
+      <div className="row prop-state-section">
         <div className="col-xs-6">
+          <Course data={this.state.courseObj}/>
+          <p className="clearfix"></p>
+        </div>
+        <div className="col-xs-12 btn-change">
           <button className="btn btn-default" onClick={this.changeCourse}>Change Course</button>
         </div>
       </div>

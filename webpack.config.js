@@ -28,7 +28,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: ["babel-loader"],
+        loaders: ["react-hot","babel-loader"],
       },
       {
         //tell webpack to use jsx-loader for all *.jsx files

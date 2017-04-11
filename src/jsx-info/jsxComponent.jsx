@@ -37,7 +37,7 @@ export default class extends React.Component{
         <div className="col-xs-12">Editor to test JSX - JS transpilation: <a target="_blank" href="https://babeljs.io/repl">{babelRef}</a></div>
         <div className="col-xs-12"><h5>What is JSX? </h5></div>
         <div className="col-xs-12">
-          This is a JSX Element: {element}
+          This is a JSX Element: {element} <br/>
         </div>
         <div className="col-xs-12">
           This is a JSX element rendered conditionally - {sessionStatus}

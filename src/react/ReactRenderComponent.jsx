@@ -13,7 +13,7 @@ function App() {
   );
 }
 
-const elem = <div>this is from HTML </div>
+const elem = <div>this line is an HTML render </div>
 
 export default class extends React.Component{
   
@@ -24,7 +24,8 @@ export default class extends React.Component{
   
   /* Render Method */
   render() {
-    let el = "<div id='root'></div>";
+    let el = "<div id='app'></div>";
+    let renderEl ="import { render } from 'react-dom'"
     return(
       <div className="col-xs-12 react-section">
         <h5 className="section-label">Rendering in React </h5>
@@ -33,14 +34,21 @@ export default class extends React.Component{
             index.html - {el}
           </h5>
           <h5>
-            index.jsx - <i>ReactDom.render(element, document.getElementById('root'))</i>
+            index.jsx -
           </h5>
+          <br />
+          <span>import ReactDom from 'react-dom'</span><br/>
+          <span><i>ReactDom.render(element, document.getElementById('app'))</i></span><br/><br/>
+          <span>{renderEl}</span><br/>
+          <span><i>render(element, document.getElementById('app'))</i></span>
           <h5>
-            <i>element</i> can be either HTML or components
+            <br/><i>element</i> can be either an HTML semantic or components
           </h5>
         </div>
         <div className="section-label">
           {elem}
+          <br/>
+          <div>The below code is rendered through components </div>
           <App />
         </div>
       </div>

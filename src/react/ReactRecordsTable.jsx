@@ -1,6 +1,5 @@
 import React from 'react'
 import Fav from '../favicon.ico'
-import update from 'react-addons-update';
 
 export default class extends React.Component{
   
@@ -19,13 +18,13 @@ export default class extends React.Component{
   }
 
   editUser(item, index) {
-    var newState = React.addons.update(this.state, {
-      userName: item.userName,
-      location: item.location,
-      contact: item.contact,
-      editIndex: index,
-      editMode: true
-    });
+    // var newState = React.addons.update(this.state, {
+    //   userName: item.userName,
+    //   location: item.location,
+    //   contact: item.contact,
+    //   editIndex: index,
+    //   editMode: true
+    // });
     this.setState(newState);
   }
 

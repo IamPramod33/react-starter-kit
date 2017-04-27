@@ -9,6 +9,13 @@
   .section-label {
     margin: 0 0 20px 0;
   }
+  .create-record-label {
+    padding: 20px 0;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
 }
 .life-cycle-section {
   padding-top: 20px;
@@ -67,5 +74,28 @@
 .prop-state-section {
   .btn-change {
     padding: 0;
+  }
+}
+.js-examples {
+  b {
+    width: 100px;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.records-section-wrapper {
+  .create-record {
+    padding: 15px 0;
+    label {
+      width: 100px;
+    }
+    input {
+      width: 200px;
+    }
+    .btn-create {
+      margin-top: 10px;
+    }
   }
 }

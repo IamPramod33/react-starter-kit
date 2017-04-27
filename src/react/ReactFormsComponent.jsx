@@ -1,6 +1,7 @@
 import React from 'react'
 import Profile from './ProfileInfoComponent'
 import EditProfile from './EditProfileComponent'
+// import { Link } from 'react-router'
 export default class extends React.Component{
   
   constructor(props) {
@@ -47,3 +48,8 @@ export default class extends React.Component{
     )
   }
 }
+
+// This needs to be added in next commit
+        /* <div className="create-record-label">
+          <Link to="/react/tables">View/Update Users</Link>
+        </div> */
